@@ -44,13 +44,13 @@ var HexagonGeometry = function (_THREE$Geometry) {
     var angle = 1.7320508075688767;
     var h = angle * 0.5; // height of a triangle
 
-    _this.vertices.push(new _three2.default.Vector3(0, 0, 1));
-    _this.vertices.push(new _three2.default.Vector3(0, 1, 1));
-    _this.vertices.push(new _three2.default.Vector3(h, 0.5, 1));
-    _this.vertices.push(new _three2.default.Vector3(h, -0.5, 1));
-    _this.vertices.push(new _three2.default.Vector3(0, -1, 1));
-    _this.vertices.push(new _three2.default.Vector3(-h, -0.5, 1));
-    _this.vertices.push(new _three2.default.Vector3(-h, 0.5, 1));
+    _this.vertices.push(new _three2.default.Vector3(0, 0, 0));
+    _this.vertices.push(new _three2.default.Vector3(0, 1, 0));
+    _this.vertices.push(new _three2.default.Vector3(h, 0.5, 0));
+    _this.vertices.push(new _three2.default.Vector3(h, -0.5, 0));
+    _this.vertices.push(new _three2.default.Vector3(0, -1, 0));
+    _this.vertices.push(new _three2.default.Vector3(-h, -0.5, 0));
+    _this.vertices.push(new _three2.default.Vector3(-h, 0.5, 0));
 
     _this.vertices.map(function (vertex) {
       return vertex.multiply(new _three2.default.Vector3(radius, radius, radius * depth));

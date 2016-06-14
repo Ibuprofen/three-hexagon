@@ -20,13 +20,13 @@ export default class HexagonGeometry extends THREE.Geometry {
     const angle = 1.7320508075688767
     const h = angle * 0.5 // height of a triangle
 
-    this.vertices.push(new THREE.Vector3( 0,     0,   1))
-    this.vertices.push(new THREE.Vector3( 0,     1,   1))
-    this.vertices.push(new THREE.Vector3( h,   0.5,   1))
-    this.vertices.push(new THREE.Vector3( h,  -0.5,   1))
-    this.vertices.push(new THREE.Vector3( 0,    -1,   1))
-    this.vertices.push(new THREE.Vector3(-h,  -0.5,   1))
-    this.vertices.push(new THREE.Vector3(-h,   0.5,   1))
+    this.vertices.push(new THREE.Vector3( 0,     0,   0))
+    this.vertices.push(new THREE.Vector3( 0,     1,   0))
+    this.vertices.push(new THREE.Vector3( h,   0.5,   0))
+    this.vertices.push(new THREE.Vector3( h,  -0.5,   0))
+    this.vertices.push(new THREE.Vector3( 0,    -1,   0))
+    this.vertices.push(new THREE.Vector3(-h,  -0.5,   0))
+    this.vertices.push(new THREE.Vector3(-h,   0.5,   0))
 
     this.vertices.map(vertex => vertex.multiply(new THREE.Vector3(radius, radius, radius * depth)))
 
